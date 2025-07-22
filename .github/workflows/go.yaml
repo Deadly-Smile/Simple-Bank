@@ -58,9 +58,6 @@ jobs:
           PG_PORT: 5432
           PG_DB: simple_bank
 
-      - name: Build
-        run: go build -v ./...
-
       - name: Test
         run: make test
         env:
